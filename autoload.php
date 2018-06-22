@@ -8,6 +8,9 @@ function mainAutoload ($className)
 	}
 }
 
+var_dump($className);
+var_dump($filePath);
+
 function carAutoload ($className)
 {
 	$filePath ='./classes/car/'.$className.'.class.php';
@@ -15,6 +18,9 @@ function carAutoload ($className)
 		include "$filePath";
 	}
 }
+
+var_dump($className);
+var_dump($filePath);
 
 function tvAutoload ($className)
 {
