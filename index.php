@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/autoload.php';
+require 'autoload.php';
 
     $bmw = new \classes\car\Car ('BMW M3', 7000000, 10);
     $bmw->setCountry('German')->setSpeed(350);
