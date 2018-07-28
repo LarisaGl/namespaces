@@ -70,3 +70,36 @@ require_once 'autoload.php';
     print_r($dkny);
     echo "</pre>";
     echo "Ваша цена:" . $dkny->getPrice();
+
+    echo '<br>';
+    echo '<br>';
+
+    $basket = new \basket\Basket ();
+
+    $basket->add($guess);
+    $basket->add($dkny);
+    $basket->add($dkny);
+    $basket->add($two);
+    $basket->add($one);
+    $basket->add($colop);
+    $basket->add($parker);
+    $basket->add($bmw);
+    $basket->add($mazda);
+    $basket->add($lg);
+    $basket->add($samsung);
+
+    $basket->showAllProduct();
+    echo '<br>';
+    echo 'На сумму: ' . $basket->sum() . '<br>';
+    echo '<br>';
+
+    $basket->deleteProduct($samsung);
+    echo '<br>';
+    $basket->deleteProduct($two);
+    echo '<br>';
+    $basket->deleteOneProduct($dkny);
+    echo '<br>';
+    $basket->showAllProduct();
+    echo '<br>';
+    echo 'На сумму: ' . $basket->sum() . '<br>';
+    echo '<br>';
