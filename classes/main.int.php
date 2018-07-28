@@ -1,5 +1,5 @@
 <?php
-namespace classes\main;
+namespace classes;
 
 interface mainInt {
         public function  __construct($name, $price, $discount);

@@ -1,5 +1,5 @@
 <?php
-namespace classes\car; 
+namespace classes; 
 
 interface carInt extends mainInt {
     	public function setCountry($country);
