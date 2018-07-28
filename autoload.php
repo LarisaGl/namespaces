@@ -4,15 +4,15 @@ function mainAutoload($className)
 {
 	$filePath =str_replace('\\', DIRECTORY_SEPARATOR, $className).'.class.php';
 	if(file_exists($filePath)) {
-		include_once "$filePath";
+		include "$filePath";
 	}
 }
 
 function mainintAutoload($intName)
 {
-	$filePath =str_replace('\\', DIRECTORY_SEPARATOR, $intName).'.int.php';
+	$filePath =str_replace('\\', DIRECTORY_SEPARATOR, $intName).'Int.php';
 	if(file_exists($filePath)) {
-		include_once "$filePath";
+		include "$filePath";
 	}
 }
 
@@ -20,15 +20,15 @@ function carAutoload($className)
 {
 	$filePath =str_replace('\\', DIRECTORY_SEPARATOR, $className).'.class.php';
 	if(file_exists($filePath)) {
-		include_once "$filePath";
+		include "$filePath";
 	}
 }
 
 function carintAutoload($intName)
 {
-	$filePath =str_replace('\\', DIRECTORY_SEPARATOR, $intName).'.int.php';
+	$filePath =str_replace('\\', DIRECTORY_SEPARATOR, $intName).'Int.php';
 	if(file_exists($filePath)) {
-		include_once "$filePath";
+		include "$filePath";
 	}
 }
 

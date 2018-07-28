@@ -1,7 +1,7 @@
 <?php
-namespace classes; 
+namespace car;
 
-interface carInt extends mainInt {
+interface carInt extends \main\mainInt {
     	public function setCountry($country);
     	public function setSpeed($speed);
     }

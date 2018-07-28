@@ -1,5 +1,5 @@
 <?php
-namespace classes; 
+namespace main; 
 
 abstract class Main implements mainInt
 {
