@@ -1,7 +1,7 @@
 <?php
 namespace main; 
 
-abstract class Main //implements mainInt
+abstract class Main implements mainInt
 {
 	public $name;
 	public $price;

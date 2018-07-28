@@ -1,7 +1,7 @@
 <?php
 namespace duck; 
 
-class Duck extends \main\Main //implements duckInt
+class Duck extends \main\Main implements duckInt
     {
         public $weight;
 

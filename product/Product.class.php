@@ -1,7 +1,7 @@
 <?php
 namespace product;
 
-class Product extends \main\Main //implements productInt
+class Product extends \main\Main implements productInt
     {
         public $season;
 

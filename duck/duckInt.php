@@ -1,6 +1,6 @@
 <?php
 namespace duck;
 
-    interface duckInt extends mainInt {
+    interface duckInt extends \main\mainInt {
         public function setWeight($weight);
     }

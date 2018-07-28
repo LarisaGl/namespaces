@@ -1,7 +1,7 @@
 <?php
 namespace pen; 
 
-class Pen extends \main\Main //implements penInt
+class Pen extends \main\Main implements penInt
     {
         public $color;
 

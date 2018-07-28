@@ -1,7 +1,7 @@
 <?php
 namespace tv;
 
-class TV extends \main\Main //implements tvInt
+class TV extends \main\Main implements tvInt
     {
         public $size;
 
