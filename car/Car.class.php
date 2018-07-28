@@ -1,7 +1,7 @@
 <?php
 namespace car; 
 
- class Car extends \main\Main implements carInt
+ class Car extends \main\Main //implements carInt
     {
         public $country;
         public $speed;
