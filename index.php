@@ -105,5 +105,7 @@ require_once 'autoload.php';
     echo '<br>';
 
     $order = new \order\Order ();
-    $order->setOrder ($basket);
-    $order->print();
+    $order->setBasket ($basket);
+    $order->printOrder();
+    echo '<br>';
+    echo 'На сумму: ' . $order->sumOrder();

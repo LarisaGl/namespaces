@@ -1,16 +1,23 @@
 <?php
 namespace order;
 
- class Order
+ class Order implements orderInt
     {
-        public function setOrder($ord)
+        private $basket;
+
+        public function setBasket($basket)
         {
-            $this->ord=$ord;
+            $this->basket = $basket;
             return $this;
         }
 
-        public function print()
+        public function printOrder()
         {
             $this->basket->showAllProduct();
+        }
+
+        public function sumOrder()
+        {
+           return $this->basket->sum();
         }
     }
