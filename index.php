@@ -103,3 +103,7 @@ require_once 'autoload.php';
     echo '<br>';
     echo 'На сумму: ' . $basket->sum() . '<br>';
     echo '<br>';
+
+    $order = new \order\Order ();
+    $order->setOrder ($basket);
+    $order->print();

@@ -1,15 +1,16 @@
 <?php
 namespace order;
 
- class Order extends \basket\Basket
+ class Order
     {
-        public function showAll() {
-            echo 'Ваш заказ:' . '<br>';
-            return $this->showAllProduct(new \basket\Basket);
+        public function setOrder($ord)
+        {
+            $this->ord=$ord;
+            return $this;
         }
 
-        public function sumAll() {
-            echo 'Сумма заказа:' . '<br>';
-            return $this->sum(new \basket\Basket);
+        public function print()
+        {
+            $this->basket->showAllProduct();
         }
     }
